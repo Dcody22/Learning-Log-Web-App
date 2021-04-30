@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    #third party apps
+    'bootstrap4', #used to take users back to home page rather than django admin login
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
