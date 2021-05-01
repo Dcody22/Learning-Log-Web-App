@@ -6,4 +6,4 @@ from .models import Entry
 
 #call the models loaded from import statements above
 admin.site.register(Topic)
-admin.site.register(Entry)
+admin.site.register(Entry) 
