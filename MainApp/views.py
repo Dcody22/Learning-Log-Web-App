@@ -16,6 +16,7 @@ def topics(request):
     topics = Topic.objects.filter(owner = request.user).order_by('date_added') #order by the record of the date on the topic (' - date_added) for descending order
     context = {'topics': topics} #key of this dicionary is what needs to be called in the template html fil
     return render(request,'MainApp/topics.html', context)
+
 @login_required
 def topic(request, topic_id):
     topic = Topic.objects.get(id = topic_id) #pull the chosen topic based off the target topic id 

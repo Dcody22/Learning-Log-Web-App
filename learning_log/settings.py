@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+        #my apps
+    'MainApp',
+    'users',
     #third party apps
     'bootstrap4', #used to take users back to home page rather than django admin login
     'django.contrib.admin',
@@ -39,9 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #my apps
-    'MainApp',
-    'users',
 ]
 
 MIDDLEWARE = [
